@@ -1,0 +1,19 @@
+<div class="row">
+    <section class="col-md-9">
+    	<h1>{{TITRE}}</h1>
+        <ul class="list-group">
+            {{BEGIN.RESULT}}
+            <li class="list-group-item">
+                <div class="row-action-primary">
+                    <a href="{{ROOT_PATH}}/user/{{PSEUDO.RESULT}}" class="btn btn-default btn-fab btn-raised {{MDI.RESULT}}">{{PHOTO.RESULT}}</a>
+                </div>
+                <div class="row-content">
+                    <h4 class="list-group-item-heading">{{PSEUDO.RESULT}} <small>{{ALIAS.RESULT}}</small></h4>
+                    <p class="list-group-item-text">{{DESCRIPTION.RESULT}}</p>
+                </div>
+                
+            </li>
+            {{END.RESULT}}
+        </ul>
+    </section>
+</div>

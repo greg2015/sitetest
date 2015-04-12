@@ -1,0 +1,20 @@
+<div class="row">
+    <section class="col-md-9">
+    	<h1>{{TITRE}}</h1>
+        <ul class="list-group">
+            {{BEGIN.FRIEND}}
+            <li class="list-group-item">
+                <div class="row-action-primary">
+                    <a href="{{ROOT_PATH}}/user/{{PSEUDO.FRIEND}}" class="btn btn-material-blue btn-fab btn-raised mdi-social-person"></a>
+                </div>
+                <div class="row-content">
+                    <h4 class="list-group-item-heading">{{PSEUDO.FRIEND}} <small>{{ALIAS.FRIEND}}</small></h4>
+                    <p class="list-group-item-text">{{DESCRIPTION.FRIEND}}</p>
+                    <a class="btn btn-default btn-lg" href="{{ROOT_PATH}}/user/{{PSEUDO.FRIEND}}?want_be_friend">Oui</a>
+                    <a class="btn btn-default btn-lg" href="{{ROOT_PATH}}/user/{{PSEUDO.FRIEND}}?dont_want_be_friend">Non</a>
+                </div>
+            </li>
+            {{END.FRIEND}}
+        </ul>
+    </section>
+</div>

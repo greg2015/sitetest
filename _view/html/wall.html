@@ -1,0 +1,44 @@
+<div class="row">
+	<section class="col-md-3 list-group">
+    <h1>{{TITLE}}</h1>
+        <div class="list-group-item" >
+            <div class="row-action-primary">
+                <a href="{{ROOT_PATH}}/user/{{PSEUDO}}" class="btn btn-default btn-fab btn-raised {{MDI}}">{{PHOTO}}</a>
+            </div>
+            <div class="row-content">
+                <h4 class="list-group-item-heading">{{PSEUDO}}</h4>
+                <p class="list-group-item-text">{{ALIAS}}</p>
+            </div>
+        </div>
+        <a class="btn btn-default" href="{{ROOT_PATH}}/user/{{PSEUDO}}/friends">Voir amis</a>
+    </section>
+    <section class="col-md-9">
+    	<h1>Publications</h1>
+        <div class="panel panel-material-blue">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{POST_TITLE}}</h3>
+            </div>
+            <form method="post" action="{{ROOT_PATH}}/post/{{PSEUDO}}/send">
+            <div class="panel-body">
+                <textarea class="form-control" name="msg"></textarea>
+            </div>
+            <div class="panel-footer"><input class="btn btn-material-blue" type="submit" value="Envoyer"></div>
+            </form>
+        </div>
+        <ul class="list-group">
+        	{{BEGIN.MESSAGE}}
+            <li class="list-group-item">
+                <div class="row-action-primary">
+                    <a href="{{ROOT_PATH}}/user/{{PSEUDO.MESSAGE}}" class="btn btn-default btn-fab btn-raised {{MDI.MESSAGE}}">{{PHOTO.MESSAGE}}</a>
+                </div>
+                <div class="row-content">
+                    <div class="least-content">{{DATE.MESSAGE}}</div>
+                    <h4 class="list-group-item-heading">{{PSEUDO.MESSAGE}} <small>{{ALIAS.MESSAGE}}</small></h4>
+                    <p class="list-group-item-text">{{MESSAGE.MESSAGE}}</p>
+                </div>
+            </li>
+            <li class="list-group-separator"></li>
+            {{END.MESSAGE}}
+        </ul>
+    </section>
+</div>

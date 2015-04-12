@@ -1,0 +1,27 @@
+<div class="row">
+    <section class="col-md-3 list-group">
+    <h1 class="hidden-xs">Profil</h1>
+        <div class="list-group-item hidden-xs" >
+            <div class="row-action-primary">
+                <a href="user/{{PSEUDO}}" class="btn btn-default btn-fab btn-raised {{MDI}}">{{PHOTO}}</a>
+            </div>
+            <div class="row-content">
+                <h4 class="list-group-item-heading">{{PSEUDO}}</h4>
+                <p class="list-group-item-text">{{ALIAS}}</p>
+            </div>
+        </div>
+    </section>
+    <section class="col-md-8">
+        <h1>Changer photo</h1>
+        <form class="jumbotron" enctype="multipart/form-data" accept-charset="utf-8" method="post" action="">
+            <fieldset class="form-group">
+                <label for="fichier">fichier :</label>
+                <input type="hidden" name="MAX_FILE_SIZE" value="100000">
+                <input class="form-control" name="fichier" type="file" tabindex="1" id="fichier">
+            </fieldset>
+            <input class="btn btn-material-blue btn-lg" type="submit" value="Modifier" tabindex="2">
+            <a class="btn btn-default btn-lg" href="{{ROOT_PATH}}/user/{{PSEUDO}}/del_photo">Supprimer l'image</a>
+        </form>
+    </section>
+</div>
+

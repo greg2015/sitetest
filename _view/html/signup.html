@@ -1,0 +1,39 @@
+<div class="row">
+    <section class="col-md-offset-3 col-md-6">
+    <h1>Inscription</h1>
+    <form class="jumbotron" accept-charset="utf-8" method="post" action="">
+        <fieldset class="form-group">
+            <label for="mail">Email :</label>
+            <input class="form-control" required name="mail" type="email" tabindex="1" value="{{MAIL}}">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="pswd">Mot de passe :</label>
+            <input class="form-control" required name="pswd" type="password" tabindex="2">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="pseudo">Pseudo :</label>
+            <input class="form-control" required name="pseudo" type="text" tabindex="3" value="{{PSEUDO}}">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="alias">Alias :</label>
+            <input class="form-control" name="alias" type="text" tabindex="4" value="{{ALIAS}}">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="age">Age :</label>
+            <input class="form-control" name="age" type="number" tabindex="5" value="{{AGE}}">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="desc">Presentez-vous :</label>
+            <textarea class="form-control" name="desc" tabindex="6">{{DESCRIPTION}}</textarea>
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="sexe">Sexe :</label>
+            <div class="radio radio-primary"><label><input type="radio" name="sexe" value="" checked> non spécifié</label></div>
+            <div class="radio radio-primary"><label><input type="radio" name="sexe" value="M" > Homme</label></div>
+            <div class="radio radio-primary"><label><input type="radio" name="sexe" value="F"> Femme</label></div>
+        </fieldset>
+        <input class="btn btn-material-blue btn-lg" type="submit" value="Inscription" tabindex="5">
+		<a href="." class="btn btn-default btn-lg">Retour</a>
+    </form>
+    </section>
+</div>
